@@ -1,11 +1,13 @@
 <script lang="ts">
 import HelloWorld from "./components/HelloWorld.vue";
 import TheHeader from "./components/TheHeader.vue";
+import SectionSlider from "./components/SectionSlider.vue";
 
 export default {
   components: {
     HelloWorld,
     TheHeader,
+    SectionSlider,
   },
 
   data() {
@@ -17,7 +19,7 @@ export default {
 <template>
   <TheHeader />
   <main>
-    <h1>hi {{ count }}</h1>
+    <SectionSlider />
     <HelloWorld msg="Gt"></HelloWorld>
     <HelloWorld msg="Gt"></HelloWorld>
     <HelloWorld msg="Gt"></HelloWorld>
@@ -37,7 +39,6 @@ export default {
 <style scoped>
 main {
   flex: 1 0 auto;
-  padding-top: 110px;
 }
 
 h1 {

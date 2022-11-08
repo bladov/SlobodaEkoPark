@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "swiper": "^8.4.4",
     "vue": "^3.2.41"
   },
   "devDependencies": {

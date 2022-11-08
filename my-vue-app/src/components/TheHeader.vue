@@ -550,16 +550,16 @@
 
       <nav class="nav" :class="{ isOpen: isOpen }">
         <ul class="nav__list">
-          <li class="nav__items">
+          <li @click="rotate" class="nav__items">
             <a href="#" class="nav__links"> Услуги </a>
           </li>
-          <li class="nav__items">
+          <li @click="rotate" class="nav__items">
             <a href="#" class="nav__links"> События </a>
           </li>
-          <li class="nav__items">
+          <li @click="rotate" class="nav__items">
             <a href="#" class="nav__links"> Меню </a>
           </li>
-          <li class="nav__items">
+          <li @click="rotate" class="nav__items">
             <a href="#" class="nav__links"> Контакты </a>
           </li>
         </ul>
@@ -607,7 +607,7 @@ export default {
   name: "TheHeader",
   data() {
     return {
-      isScrolled: false,
+      isScrolled: true,
       isRotate: false,
       isOpen: false,
     };
@@ -617,11 +617,17 @@ export default {
     let prevScrollpos = window.pageYOffset;
     window.addEventListener("scroll", () => {
       let currentScrollPos = window.pageYOffset;
+      if (currentScrollPos === 0) {
+        this.isScrolled = true;
+        return;
+      }
       if (prevScrollpos > currentScrollPos) {
-        this.isScrolled = false;
+        this.isScrolled = true;
+        // this.isScrolled = false;
       } else {
         this.isOpen = false;
-        this.isScrolled = true;
+        // this.isScrolled = true;
+        this.isScrolled = false;
         this.isRotate = false;
       }
       prevScrollpos = currentScrollPos;
@@ -646,7 +652,7 @@ export default {
   top: 0;
   right: 0;
   /* background-color: var(--sub-color); */
-  background-color: rgba(155, 223, 67, 0.8);
+  background-color: #f2f3f1cc;
   transition: transform 0.4s ease-in-out;
 }
 
