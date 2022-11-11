@@ -1,69 +1,71 @@
 <template>
-  <div class="slider">
-    <swiper
-      :modules="modules"
-      :slides-per-view="1"
-      navigation
-      :autoplay="{ delay: 4000 }"
-      :pagination="{ clickable: true }"
-      @swiper="onSwiper"
-      @slideChange="onSlideChange"
-      class="swiper"
-    >
-      <swiper-slide class="slide slide-1">
-        <div class="slide__wrapper">
-          <div class="slide__content">
-            <h2 class="title">Отдых и беседки</h2>
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Veritatis labore cumque quasi dicta, voluptates provident odit
-              nisi animi nulla ipsa repellat laboriosam pariatur omnis
-              repellendus, distinctio inventore harum, eveniet ducimus.
-            </p>
+  <section>
+    <div class="slider">
+      <swiper
+        :modules="modules"
+        :slides-per-view="1"
+        navigation
+        :autoplay="{ delay: 4000 }"
+        :pagination="{ clickable: true }"
+        @swiper="onSwiper"
+        @slideChange="onSlideChange"
+        class="swiper"
+      >
+        <swiper-slide class="slide slide-1">
+          <div class="slide__wrapper">
+            <div class="slide__content">
+              <h2 class="title">Отдых и беседки</h2>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Veritatis labore cumque quasi dicta, voluptates provident odit
+                nisi animi nulla ipsa repellat laboriosam pariatur omnis
+                repellendus, distinctio inventore harum, eveniet ducimus.
+              </p>
+            </div>
           </div>
-        </div>
-      </swiper-slide>
-      <swiper-slide class="slide slide-2">
-        <div class="slide__wrapper">
-          <div class="slide__content">
-            <h2 class="title">Отдых и беседки</h2>
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Veritatis labore cumque quasi dicta, voluptates provident odit
-              nisi animi nulla ipsa repellat laboriosam pariatur omnis
-              repellendus, distinctio inventore harum, eveniet ducimus.
-            </p>
+        </swiper-slide>
+        <swiper-slide class="slide slide-2">
+          <div class="slide__wrapper">
+            <div class="slide__content">
+              <h2 class="title">Отдых и беседки</h2>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Veritatis labore cumque quasi dicta, voluptates provident odit
+                nisi animi nulla ipsa repellat laboriosam pariatur omnis
+                repellendus, distinctio inventore harum, eveniet ducimus.
+              </p>
+            </div>
           </div>
-        </div>
-      </swiper-slide>
-      <swiper-slide class="slide slide-3">
-        <div class="slide__wrapper">
-          <div class="slide__content">
-            <h2 class="title">Отдых и беседки</h2>
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Veritatis labore cumque quasi dicta, voluptates provident odit
-              nisi animi nulla ipsa repellat laboriosam pariatur omnis
-              repellendus, distinctio inventore harum, eveniet ducimus.
-            </p>
+        </swiper-slide>
+        <swiper-slide class="slide slide-3">
+          <div class="slide__wrapper">
+            <div class="slide__content">
+              <h2 class="title">Отдых и беседки</h2>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Veritatis labore cumque quasi dicta, voluptates provident odit
+                nisi animi nulla ipsa repellat laboriosam pariatur omnis
+                repellendus, distinctio inventore harum, eveniet ducimus.
+              </p>
+            </div>
           </div>
-        </div>
-      </swiper-slide>
-      <swiper-slide class="slide slide-4">
-        <div class="slide__wrapper">
-          <div class="slide__content">
-            <h2 class="title">Отдых и беседки</h2>
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Veritatis labore cumque quasi dicta, voluptates provident odit
-              nisi animi nulla ipsa repellat laboriosam pariatur omnis
-              repellendus, distinctio inventore harum, eveniet ducimus.
-            </p>
+        </swiper-slide>
+        <swiper-slide class="slide slide-4">
+          <div class="slide__wrapper">
+            <div class="slide__content">
+              <h2 class="title">Отдых и беседки</h2>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Veritatis labore cumque quasi dicta, voluptates provident odit
+                nisi animi nulla ipsa repellat laboriosam pariatur omnis
+                repellendus, distinctio inventore harum, eveniet ducimus.
+              </p>
+            </div>
           </div>
-        </div>
-      </swiper-slide>
-    </swiper>
-  </div>
+        </swiper-slide>
+      </swiper>
+    </div>
+  </section>
 </template>
 
 <script lang="ts">
@@ -137,8 +139,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #050403ba;
-  background-color: #38241175;
+  background-color: var(--bg-shadow);
   /* opacity: 0.8; */
 }
 .slide__content {
@@ -147,7 +148,7 @@ export default {
   justify-content: center;
   align-items: center;
   width: 50%;
-  color: whitesmoke;
+  color: var(--text-white);
 }
 
 .title {

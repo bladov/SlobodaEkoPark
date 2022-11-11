@@ -15,6 +15,14 @@
 
   --main-color: #377db2;
   --sub-color: #dfb332;
+
+  --bg-shadow: #38241175;
+  --bg-white: #f2f3f1cc;
+
+  --text-white: whitesmoke;
+  --links-color: #242424;
+
+  --padding-section: 120px;
 }
 
 #app {
@@ -22,6 +30,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+img {
+  display: block;
 }
 
 /* a {

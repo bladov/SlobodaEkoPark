@@ -562,6 +562,9 @@
           <li @click="rotate" class="nav__items">
             <a href="#" class="nav__links"> Контакты </a>
           </li>
+          <li @click="rotate" class="nav__items">
+            <a href="#" class="nav__links"> Правила нахождения </a>
+          </li>
         </ul>
       </nav>
 
@@ -623,6 +626,7 @@ export default {
       }
       if (prevScrollpos > currentScrollPos) {
         this.isScrolled = true;
+        this.isOpen = false;
         // this.isScrolled = false;
       } else {
         this.isOpen = false;
@@ -652,7 +656,7 @@ export default {
   top: 0;
   right: 0;
   /* background-color: var(--sub-color); */
-  background-color: #f2f3f1cc;
+  background-color: var(--bg-white);
   transition: transform 0.4s ease-in-out;
 }
 
@@ -676,9 +680,9 @@ export default {
   font-size: 20px;
   padding: 0.5rem;
   display: inline-block;
-  color: inherit;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
+  color: var(--links-color);
 }
 
 .nav__links:hover {
@@ -686,7 +690,7 @@ export default {
 }
 .nav__list {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .logo {

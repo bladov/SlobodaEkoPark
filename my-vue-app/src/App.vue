@@ -2,12 +2,14 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import TheHeader from "./components/TheHeader.vue";
 import SectionSlider from "./components/SectionSlider.vue";
+import TheHero from "./components/TheHero.vue";
 
 export default {
   components: {
     HelloWorld,
     TheHeader,
     SectionSlider,
+    TheHero,
   },
 
   data() {
@@ -20,6 +22,7 @@ export default {
   <TheHeader />
   <main>
     <SectionSlider />
+    <TheHero></TheHero>
     <HelloWorld msg="Gt"></HelloWorld>
     <HelloWorld msg="Gt"></HelloWorld>
     <HelloWorld msg="Gt"></HelloWorld>
