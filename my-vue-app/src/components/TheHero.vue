@@ -1,5 +1,5 @@
 <template>
-  <section class="hero">
+  <section class="hero section">
     <div class="container hero__container">
       <div class="hero__left-column">
         <div
@@ -59,7 +59,8 @@ export default {
 
 <style lang="scss">
 .hero {
-  padding: var(--padding-section) 0;
+  overflow: hidden;
+  background-color: var(--section-color-white);
 
   &__container {
     display: flex;
@@ -108,17 +109,31 @@ export default {
 
   &__right-column {
     max-width: 550px;
+
+    @media (max-width: 1100px) {
+      align-self: center;
+    }
   }
 
   &__title {
     color: var(--links-color);
     font-weight: bold;
-    font-size: 24px;
+    font-size: calc(var(--index) * 1.2);
     margin-bottom: 40px;
+
+    @media (max-width: 1100px) {
+      text-align: center;
+    }
   }
 
   &__text {
     line-height: 2rem;
+    font-size: calc(var(--index) / 1.2);
+    color: var(--text--black);
+
+    @media (max-width: 1100px) {
+      text-align: center;
+    }
   }
 
   &__text:not(:last-child) {

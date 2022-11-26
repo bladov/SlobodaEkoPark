@@ -4,7 +4,8 @@
       <swiper
         :modules="modules"
         :slides-per-view="1"
-        navigation
+        :space-between="25"
+        :navigation="true"
         :autoplay="{ delay: 4000 }"
         :pagination="{ clickable: true }"
         @swiper="onSwiper"
@@ -104,11 +105,15 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .swiper-button-next {
 }
 .slider {
   height: 100vh;
+
+  @media (max-width: 900px) {
+    // max-height: 1200px;
+  }
 }
 .swiper {
   height: 100%;
@@ -141,6 +146,10 @@ export default {
   align-items: center;
   background-color: var(--bg-shadow);
   /* opacity: 0.8; */
+
+  // @media (max-width: 900px) {
+  //   align-items: flex-start;
+  // }
 }
 .slide__content {
   display: flex;
@@ -149,19 +158,28 @@ export default {
   align-items: center;
   width: 50%;
   color: var(--text-white);
+
+  @media (max-width: 900px) {
+    width: 80%;
+  }
 }
 
 .title {
   text-align: center;
-  font-size: 54px;
+  /* font-size: 54px; */
+  font-size: calc(var(--index) * 2.5);
   font-weight: bold;
   margin-bottom: 40px;
+  color: var(--title-color);
 }
 
 .text {
-  font-size: 32px;
-  line-height: 3rem;
+  /* font-size: 32px; */
+  font-size: calc(var(--index) * 1.3);
+  /* line-height: 3rem; */
+  line-height: calc(var(--index) * 2);
   text-align: center;
+  color: var(--text-white);
 }
 </style>
 

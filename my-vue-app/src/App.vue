@@ -1,15 +1,15 @@
 <script lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
 import TheHeader from "./components/TheHeader.vue";
 import SectionSlider from "./components/SectionSlider.vue";
+import ParalaxSection from "./components/ParalaxSection.vue";
 import TheHero from "./components/TheHero.vue";
 
 export default {
   components: {
-    HelloWorld,
     TheHeader,
     SectionSlider,
     TheHero,
+    ParalaxSection,
   },
 
   data() {
@@ -23,17 +23,7 @@ export default {
   <main>
     <SectionSlider />
     <TheHero></TheHero>
-    <HelloWorld msg="Gt"></HelloWorld>
-    <HelloWorld msg="Gt"></HelloWorld>
-    <HelloWorld msg="Gt"></HelloWorld>
-    <HelloWorld msg="Gt"></HelloWorld>
-    <HelloWorld msg="Gt"></HelloWorld>
-    <HelloWorld msg="Gt"></HelloWorld>
-    <HelloWorld msg="Gt"></HelloWorld>
-    <HelloWorld msg="Gt"></HelloWorld>
-    <HelloWorld msg="Gt"></HelloWorld>
-    <HelloWorld msg="Gt"></HelloWorld>
-    <HelloWorld msg="Gt"></HelloWorld>
+    <ParalaxSection></ParalaxSection>
   </main>
 
   <footer class="">footer</footer>
