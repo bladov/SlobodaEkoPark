@@ -5,7 +5,7 @@
         <div
           class="hero__picture hero__picture-1"
           data-aos="fade-down"
-          data-aos-delay="300"
+          data-aos-delay="700"
           data-aos-duration="1000"
         >
           <img src="../assets/img/БеседкиНаПруду.jpg" alt="" />
@@ -13,11 +13,15 @@
         <div
           class="hero__picture hero__picture-2"
           data-aos="fade-right"
-          data-aos-delay="200"
+          data-aos-delay="500"
         >
           <img src="../assets/img/ВидНаПляж.jpg" alt="" />
         </div>
-        <div class="hero__picture hero__picture-3" data-aos="fade-left">
+        <div
+          class="hero__picture hero__picture-3"
+          data-aos="fade-left"
+          data-aos-delay="200"
+        >
           <img src="../assets/img/МногоБЕседок.jpg" alt="" />
         </div>
       </div>
@@ -25,17 +29,17 @@
       <div class="hero__right-column">
         <h2 class="hero__title">О нас</h2>
 
-        <p class="hero__text" data-aos="fade-left" data-aos-delay="200">
+        <p class="hero__text" data-aos="fade-left" data-aos-delay="300">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum sunt
           aliquid modi eius quaerat incidunt ad, cum inventore tempora dolore,
           suscipit velit quasi iste similique accusantium. Rerum qui aperiam
           reiciendis.
         </p>
-        <p class="hero__text" data-aos="fade-left" data-aos-delay="300">
+        <p class="hero__text" data-aos="fade-left" data-aos-delay="450">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum sunt
           aliquid modi eius quaerat incidunt ad, cum inventore tempora dolore
         </p>
-        <p class="hero__text" data-aos="fade-left" data-aos-delay="400">
+        <p class="hero__text" data-aos="fade-left" data-aos-delay="600">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum sunt
           aliquid modi eius quaerat incidunt ad, cum inventore tempora dolore
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
@@ -128,7 +132,7 @@ export default {
 
   &__text {
     line-height: 2rem;
-    font-size: calc(var(--index) / 1.2);
+    font-size: calc(var(--index) / 1.5);
     color: var(--text--black);
 
     @media (max-width: 1100px) {

@@ -3,6 +3,7 @@ import TheHeader from "./components/TheHeader.vue";
 import SectionSlider from "./components/SectionSlider.vue";
 import ParalaxSection from "./components/ParalaxSection.vue";
 import TheHero from "./components/TheHero.vue";
+import ServicesSection from "./components/ServicesSection.vue";
 
 export default {
   components: {
@@ -10,6 +11,7 @@ export default {
     SectionSlider,
     TheHero,
     ParalaxSection,
+    ServicesSection,
   },
 
   data() {
@@ -24,6 +26,7 @@ export default {
     <SectionSlider />
     <TheHero></TheHero>
     <ParalaxSection></ParalaxSection>
+    <ServicesSection></ServicesSection>
   </main>
 
   <footer class="">footer</footer>
