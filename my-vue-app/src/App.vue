@@ -1,10 +1,12 @@
-<script lang="ts">
+<script>
 import TheHeader from "./components/TheHeader.vue";
 import SectionSlider from "./components/SectionSlider.vue";
 import ParalaxSection from "./components/ParalaxSection.vue";
 import TheHero from "./components/TheHero.vue";
 import ServicesSection from "./components/ServicesSection.vue";
-
+import VideoSection from "./components/VideoSection.vue";
+import GallerySection from "./components/GallerySection.vue";
+import Footer from "./components/Footer.vue";
 export default {
   components: {
     TheHeader,
@@ -12,6 +14,9 @@ export default {
     TheHero,
     ParalaxSection,
     ServicesSection,
+    VideoSection,
+    GallerySection,
+    Footer,
   },
 
   data() {
@@ -27,9 +32,11 @@ export default {
     <TheHero></TheHero>
     <ParalaxSection></ParalaxSection>
     <ServicesSection></ServicesSection>
+    <VideoSection></VideoSection>
+    <GallerySection></GallerySection>
   </main>
 
-  <footer class="">footer</footer>
+  <Footer></Footer>
 </template>
 
 <style scoped>

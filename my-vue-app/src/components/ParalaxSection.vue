@@ -3,12 +3,13 @@
     <div class="paralax__wrapper"></div>
   </div>
 </template>
-<script lang="ts">
+<script>
 import { onBeforeUnmount, ref } from "vue";
 export default {
   name: "ParalaxSection",
 
   setup() {
+    // const paralax = ref(null);
     const paralax = ref(null);
 
     const setCustomProperty = () => {

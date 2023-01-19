@@ -16,7 +16,7 @@
           <div class="slide__wrapper">
             <div class="slide__content">
               <h2 class="title">Отдых и беседки</h2>
-              <p class="text">
+              <p class="text slide__text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Veritatis labore cumque quasi dicta, voluptates provident odit
                 nisi animi nulla ipsa repellat laboriosam pariatur omnis
@@ -183,8 +183,14 @@ export default {
 }
 </style>
 
-<style>
+<style scoped lang="scss">
 .swiper-pagination-bullet {
   border: 2px solid white;
+}
+
+.slide__text {
+  @media (max-width: 500px) {
+    padding: 0 20px;
+  }
 }
 </style>

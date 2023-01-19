@@ -27,6 +27,7 @@
   --links-color: #242424;
 
   --padding-section: 120px;
+  --padding-section-md: 60px;
   --section-color-white: #f6f6f6;
 }
 
@@ -52,11 +53,14 @@ body {
 }
 
 .section {
-  padding: var(--padding-section) 0;
+  padding: var(--padding-section) 1rem;
+}
+.section-grey {
+  background-color: #f6f6f6;
 }
 
 @media (max-width: 900px) {
   .section {
-    padding: calc(var(--index) * 2) 0;
+    padding: calc(var(--index) * 2) 1rem;
   }
 }

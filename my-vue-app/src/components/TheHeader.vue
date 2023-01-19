@@ -651,13 +651,16 @@ export default {
 .header {
   position: fixed;
   width: 100%;
-  z-index: 5;
+  z-index: 500;
   left: 0;
   top: 0;
   right: 0;
   /* background-color: var(--sub-color); */
   background-color: var(--bg-white);
   transition: transform 0.4s ease-in-out;
+
+  background: url("/src/assets/img/noise_transparent@2x.png"),
+    radial-gradient(100% 215.42% at 0% 0%, #c5e9ff 0%, #fffdd9d6 100%), #0b0b0b;
 }
 
 .scrolled {

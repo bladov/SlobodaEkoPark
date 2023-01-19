@@ -1,5 +1,5 @@
 <template>
-  <section class="hero section">
+  <section class="hero section section-grey">
     <div class="container hero__container">
       <div class="hero__left-column">
         <div
@@ -42,13 +42,7 @@
         <p class="hero__text" data-aos="fade-left" data-aos-delay="600">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum sunt
           aliquid modi eius quaerat incidunt ad, cum inventore tempora dolore
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
-          quaerat tempora veniam rem officiis aut facere beatae quam iste iusto
-          ipsum vero amet expedita ullam commodi suscipit, vel tempore
-          asperiores? Modi sapiente, libero explicabo aut autem reiciendis nobis
-          minima magnam assumenda perferendis minus harum doloremque asperiores
-          cum eaque ea veritatis? Voluptas quo voluptate officiis doloremque
-          deleniti necessitatibus reprehenderit excepturi error.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         </p>
       </div>
     </div>
@@ -64,7 +58,7 @@ export default {
 <style lang="scss">
 .hero {
   overflow: hidden;
-  background-color: var(--section-color-white);
+  // background-color: var(--section-color-white);
 
   &__container {
     display: flex;
@@ -128,11 +122,15 @@ export default {
     @media (max-width: 1100px) {
       text-align: center;
     }
+
+    @media (max-width: 575px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__text {
-    line-height: 2rem;
-    font-size: calc(var(--index) / 1.5);
+    // line-height: calc(var(--index) / 0.9);
+    font-size: calc(var(--index) / 1.3);
     color: var(--text--black);
 
     @media (max-width: 1100px) {
@@ -142,6 +140,10 @@ export default {
 
   &__text:not(:last-child) {
     margin-bottom: 40px;
+
+    @media (max-width: 575px) {
+      margin-bottom: 20px;
+    }
   }
 }
 </style>
